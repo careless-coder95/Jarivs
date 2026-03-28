@@ -151,6 +151,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                         [InlineKeyboardButton(text="⌯ 𝐇єʟᴘ 𝐀ηᴅ 𝐂ᴏᴍᴍᴧηᴅs ⌯", url="https://t.me/EdithHelpsBot?start=help")]
                     ]
                 )
+            )
 
     else:
         update.effective_message.reply_text("Not Dead...")
