@@ -468,13 +468,13 @@ def runban(bot: Bot, update: Update, args: List[str]):
 
 
 __help__ = """
- - /kickme: kicks the user who issued the command
+ ➻ /kickme: kicks the user who issued the command
 
-*Admin only:*
- - /ban <userhandle>: bans a user. (via handle, or reply)
- - /tban <userhandle> x(m/h/d): bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
- - /unban <userhandle>: unbans a user. (via handle, or reply)
- - /kick <userhandle>: kicks a user, (via handle, or reply)
+❖ *Admin only:*
+ ➻ /ban <userhandle>: bans a user. (via handle, or reply)
+ ➻ /tban <userhandle> x(m/h/d): bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
+ ➻ /unban <userhandle>: unbans a user. (via handle, or reply)
+ ➻ /kick <userhandle>: kicks a user, (via handle, or reply)
 """
 
 __mod_name__ = "Bans"
