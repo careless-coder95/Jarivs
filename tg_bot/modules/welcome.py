@@ -469,16 +469,10 @@ WELC_HELP_TXT = "❖ You can customize your group’s welcome/goodbye messages u
                 " ➻ `{{id}}`: this represents the user's *id*\n" \
                 " ➻ `{{count}}`: this represents the user's *member number*.\n" \
                 " ➻ `{{chatname}}`: this represents the *current chat name*.\n\n" \
-                "\nEach variable MUST be surrounded by `{{}}` to be replaced.\n" \
-                "Welcome messages also support markdown, so you can make any elements bold/italic/code/links. " \
-                "Buttons are also supported, so you can make your welcomes look awesome with some nice intro " \
-                "buttons.\n" \
-                "To create a button linking to your rules, use this: `[Rules](buttonurl://t.me/{}?start=group_id)`. " \
-                "Simply replace `group_id` with your group's id, which can be obtained via /id, and you're good to " \
-                "go. Note that group ids are usually preceded by a `-` sign; this is required, so please don't " \
-                "remove it.\n" \
-                "If you're feeling fun, you can even set images/gifs/videos/voice messages as the welcome message by " \
-                "replying to the desired media, and calling /setwelcome.".format(dispatcher.bot.username)
+                "\nUse `{{}}` for variables.\n" \
+                "Supports Markdown & buttons.\n" \
+                "Example: `[Rules](buttonurl://t.me/{}?start=group_id)` (get id via /id, keep `-`).\n" \
+                "Media (image/gif/video/voice) can be set using /setwelcome.\n".format(dispatcher.bot.username)
 
 
 @run_async
