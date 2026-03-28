@@ -457,19 +457,18 @@ def clean_welcome(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
 
-WELC_HELP_TXT = "Your group's welcome/goodbye messages can be personalised in multiple ways. If you want the messages" \
-                " to be individually generated, like the default welcome message is, you can use *these* variables:\n" \
-                " - `{{first}}`: this represents the user's *first* name\n" \
-                " - `{{last}}`: this represents the user's *last* name. Defaults to *first name* if user has no " \
+WELC_HELP_TXT = "❖ You can customize your group’s welcome/goodbye messages using variables for personalized messages"\n\n \
+                " ➻ `{{first}}`: this represents the user's *first* name\n" \
+                " ➻ `{{last}}`: this represents the user's *last* name. Defaults to *first name* if user has no " \
                 "last name.\n" \
-                " - `{{fullname}}`: this represents the user's *full* name. Defaults to *first name* if user has no " \
+                " ➻ `{{fullname}}`: this represents the user's *full* name. Defaults to *first name* if user has no " \
                 "last name.\n" \
-                " - `{{username}}`: this represents the user's *username*. Defaults to a *mention* of the user's " \
+                " ➻ `{{username}}`: this represents the user's *username*. Defaults to a *mention* of the user's " \
                 "first name if has no username.\n" \
-                " - `{{mention}}`: this simply *mentions* a user - tagging them with their first name.\n" \
-                " - `{{id}}`: this represents the user's *id*\n" \
-                " - `{{count}}`: this represents the user's *member number*.\n" \
-                " - `{{chatname}}`: this represents the *current chat name*.\n" \
+                " ➻ `{{mention}}`: this simply *mentions* a user - tagging them with their first name.\n" \
+                " ➻ `{{id}}`: this represents the user's *id*\n" \
+                " ➻ `{{count}}`: this represents the user's *member number*.\n" \
+                " ➻ `{{chatname}}`: this represents the *current chat name*.\n\n" \
                 "\nEach variable MUST be surrounded by `{{}}` to be replaced.\n" \
                 "Welcome messages also support markdown, so you can make any elements bold/italic/code/links. " \
                 "Buttons are also supported, so you can make your welcomes look awesome with some nice intro " \
@@ -514,18 +513,18 @@ def __chat_settings__(chat_id, user_id):
 __help__ = """
 {}
 
-*Admin only:*
- - /welcome <on/off>: enable/disable welcome messages.
- - /welcome: shows current welcome settings.
- - /welcome noformat: shows current welcome settings, without the formatting - useful to recycle your welcome messages!
- - /goodbye -> same usage and args as /welcome.
- - /setwelcome <sometext>: set a custom welcome message. If used replying to media, uses that media.
- - /setgoodbye <sometext>: set a custom goodbye message. If used replying to media, uses that media.
- - /resetwelcome: reset to the default welcome message.
- - /resetgoodbye: reset to the default goodbye message.
- - /cleanwelcome <on/off>: On new member, try to delete the previous welcome message to avoid spamming the chat.
- - /rmjoin <on/off>: when someone joins, try to delete the *user* joined the group message.
- - /welcomehelp: view more formatting information for custom welcome/goodbye messages.
+ ❖ *Admin only:*
+ ➻ /welcome <on/off>: enable/disable welcome messages.
+ ➻ /welcome: shows current welcome settings.
+ ➻ /welcome noformat: shows current welcome settings, without the formatting - useful to recycle your welcome messages!
+ ➻ /goodbye -> same usage and args as /welcome.
+ ➻ /setwelcome <sometext>: set a custom welcome message. If used replying to media, uses that media.
+ ➻ /setgoodbye <sometext>: set a custom goodbye message. If used replying to media, uses that media.
+ ➻ /resetwelcome: reset to the default welcome message.
+ ➻ /resetgoodbye: reset to the default goodbye message.
+ ➻ /cleanwelcome <on/off>: On new member, try to delete the previous welcome message to avoid spamming the chat.
+ ➻ /rmjoin <on/off>: when someone joins, try to delete the *user* joined the group message.
+ ➻ /welcomehelp: view more formatting information for custom welcome/goodbye messages.
 
 """.format(WELC_HELP_TXT)
 
