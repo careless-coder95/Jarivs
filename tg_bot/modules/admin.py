@@ -255,28 +255,28 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
-Lazy to promote or demote someone for admins? Want to see basic information about chat? \
+❖ Lazy to promote or demote someone for admins? Want to see basic information about chat? \
 All stuff about chatroom such as admin lists, pinning or grabbing an invite link can be \
 done easily using the bot.
 
- - /adminlist: list of admins and members in the chat
- - /staff: same as /adminlist
- - /link: get the group link for this chat.
- - #link: same as /link
+ ➻ /adminlist: list of admins and members in the chat
+ ➻ /staff: same as /adminlist
+ ➻ /link: get the group link for this chat.
+➻ #link: same as /link
 
-*Admin only:*
- - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifies to users.
- - /unpin: unpins the currently pinned message.
- - /invitelink: generates new invite link.
- - /setlink <your group link here>: set the group link for this chat.
- - /clearlink: clear the group link for this chat.
- - /promote: promotes the user replied to
- - /demote: demotes the user replied to
+❖ *Admin only:*
+ ➻ /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifies to users.
+ ➻ /unpin: unpins the currently pinned message.
+ ➻ /invitelink: generates new invite link.
+ ➻ /setlink <your group link here>: set the group link for this chat.
+ ➻ /clearlink: clear the group link for this chat.
+ ➻ /promote: promotes the user replied to
+ ➻ /demote: demotes the user replied to
  
- An example of set a link:
-`/setlink https://t.me/joinchat/HwiIk1RADK5gRMr9FBdOrwtae`
+ ❖ *An example of set a link:*
+`/setlink https://t.me/CarelessxWorld`
 
-An example of promoting someone to admins:
+❖ *An example of promoting someone to admins:*
 `/promote @username`; this promotes a user to admins.
 """
 
