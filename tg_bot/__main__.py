@@ -18,12 +18,14 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-❍ Hi {}, my name is {}!
+❍ Hi {} 🤍
+❍ my name is {} 💌
+
 ❍ I'm here to help you manage your groups! Use /help to find out how to use me to my full potential.
 
 ✦ Join my [Update Channel](https://t.me/Anya_Bots) to get information on all the latest updates.
 
-⌯ [𝐒ᴜᴘᴘσʀᴛ](https://t.me/CarelessxWorld) | [𝐔ᴘᴅᴧᴛᴇ](https://t.me/Anya_Bots) | [𝐀ʟʟ 𝐁ᴏᴛs](https://t.me/Anya_Bots) ⌯
+⌯ [𝐒ᴜᴘᴘσʀᴛ](https://t.me/Anya_Supports) | [𝐔ᴘᴅᴧᴛᴇ](https://t.me/Anya_Bots) | [𝐀ʟʟ 𝐁ᴏᴛs](https://t.me/Anya_Bots) ⌯
 """
 
 HELP_STRINGS = """
@@ -145,8 +147,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton(text="✙ 𝐀ᴅᴅ 𝐌є 𝐈η 𝐘συʀ 𝐆ʀσυᴘ ✙", url="t.me/{}?startgroup=true")],
-                        [InlineKeyboardButton(text="⌯ 𝐇єʟᴘ 𝐀ηᴅ 𝐂ᴏᴍᴍᴧηᴅs ⌯", url="https://t.me/{}?start=help")]
+                        [InlineKeyboardButton(text="✙ 𝐀ᴅᴅ 𝐌є 𝐈η 𝐘συʀ 𝐆ʀσυᴘ ✙", url="http://t.me/EdithHelpsBot?startgroup=true")],
+                        [InlineKeyboardButton(text="⌯ 𝐇єʟᴘ 𝐀ηᴅ 𝐂ᴏᴍᴍᴧηᴅs ⌯", url="https://t.me/EdithHelpsBot?start=help")]
                     ]
                 )
 
