@@ -142,13 +142,16 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://youtu.be/W6CLKrehy6w")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Mo_Tech_Group"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/Mo_Tech_YT")],
-                     [InlineKeyboardButton(text="👨‍💻 Make", url="https://youtu.be/wKL90i3cjPw"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(text="✙ 𝐀ᴅᴅ 𝐌є 𝐈η 𝐘συʀ 𝐆ʀσυᴘ ✙", url="t.me/{}?startgroup=true")],
+                        [InlineKeyboardButton(text="⌯ 𝐇єʟᴘ 𝐀ηᴅ 𝐂ᴏᴍᴍᴧηᴅs ⌯", url="https://t.me/{}?start=help")]
+                    ]
+                )
 
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("Not Dead...")
 
 
 # for test purposes
